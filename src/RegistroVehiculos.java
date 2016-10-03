@@ -18,7 +18,6 @@ public class RegistroVehiculos {
 
     public Optional<Coche> obtenerVehiculo(String matricula) {
         return coches.stream().findFirst().filter(coche -> coche.getMatricula().equals(matricula));
-        //coches.stream().filter(coche -> coche.getMatricula().equals(matricula));
     }
 
     public void eliminarVehiculo(String matricula) {
