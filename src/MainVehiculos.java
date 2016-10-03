@@ -20,15 +20,15 @@ public class MainVehiculos {
         registro.registrarVehiculo(RomeoAlfaJulietta);
 
         // Debes comprobar que el HashSet no permite duplicados
-
         registro.registrarVehiculo(RomeoAlfaJulietta);
 
-        System.out.println(registro.obtenerTodos());
+        System.out.println("Todos: "+registro.obtenerTodos());
 
-        registro.obtenerVehiculo("4749JAV").ifPresent(coche -> System.out.println("Coche con matrícula 4749JAV: "+coche));
+        registro.obtenerVehiculo("1234ENG").ifPresent(coche -> System.out.println("\nCoche con matrícula 1234ENG: "+coche));
+
 
         // Bucle expresado en Java8
-        registro.obtenerVehiculosMarca("Lexus").forEach(coche -> System.out.println(coche));
+        registro.obtenerVehiculosMarca("Lexus").forEach(coche -> System.out.println("Buscando Lexus: "+coche));
 
         registro.obtenerVehiculoPrecioMax().ifPresent(coche -> System.out.println("Coche precio máximo: "+coche));
 

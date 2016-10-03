@@ -48,4 +48,10 @@ public class Coche {
     public void setPrecio(double precio) {
         this.precio = precio;
     }
+
+    @Override
+    public String toString() {
+        return "Coche con matricula "+matricula+", marca "+marca+", modelo: "+modelo+" y precio "+precio+"\n";
+
+    }
 }
